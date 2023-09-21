@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modac</title>
+    <link rel="stylesheet" href="/scss/custom.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="/content/scripts/jquery-3.7.1.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap-icons/bootstrap-icons.svg"></script>
+    <script src="content/scripts/functions.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <script>
+        $(function () {
+          $("#header").load("header.html");
+        });
+      </script>
+    </header>
+    <div class="divMainGame divMain">
+      <div class="divMsj">
+        <b class="bMsj">PUEDES SER EN UN GENIO, PERSEVERA PARA LOGRARLO. </b>
+      </div>
+      <div class="divTitle">
+        <div id="title">
+          <script>
+            $(function () {
+              $("#title").load("title.html");
+            });
+          </script>
+        </div>
+      </div>
+      <div class="divContainer">
+        <div id="bank" class="divBank">
+          <script>
+            $(function () {
+              $("#bank").load("bank.html");
+            });
+          </script>
+        </div>
+        <div id="board" class="divBoard">
+          <script>
+            $(function () {
+              $("#board").load("board.html");
+            });
+          </script>
+        </div>
+        <div id="solution" class="divSolution">
+          <script>
+            $(function () {
+              $("#solution").load("solution.html");
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
