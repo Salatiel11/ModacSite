@@ -13956,6 +13956,7 @@ margin-right: auto;
   height: 100px;
   padding: 5px;
   position: absolute;
+  display: flex;
   border: 1px solid #a7acb1;
 
 }
@@ -13965,25 +13966,33 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  display: flex;
   border: 1px solid #a7acb1;
 }
 .imgv2spsBank {
   width: var(--imgvwidht-size);
   height: 100px;
-  float: left;;
-
+  float: left;
+  display: flex;
+  position: absolute;
 }
 .imgv3spsBank{
   width: var(--imgvwidht-size);
-  height: 150px;
+  height: 130px;
+  display: flex;
+  position: absolute;
 }
 .imgh3spsBank {
   width: 150px;
+  position: absolute;
+  display: flex;
   height: var(--imghheight-size);
 }
 .imgh2spsBank {
   width: 100px;
+  display: flex;
   height: var(--imghheight-size);
+  position: absolute;
 }
 .imgCarousel{
 
@@ -14033,12 +14042,24 @@ border-radius: 15px;
 .divBank{
   text-align: center;
   width: 30%;
- 
+ overflow: scroll;
+ padding: 10px;
 }
 .divBoard{
   text-align: center;
   width: 60%;
   
+}
+.divBoard2{
+  width: 50%;
+  height: 50%;
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-template-rows: repeat(6,1fr);
+border: solid thin black;
+}
+.divBoard2 *{
+  border: solid thin black;
 }
 .divSolution{
   text-align: center;
@@ -14050,14 +14071,20 @@ border-radius: 15px;
   width: 20%;
 }
 .divImgBank{
- display: inline-block;
- 
- padding: 5px;
+
+
 }
 .divLineTitle{
-  height: 1px;
-  margin-left: 25px;
-  margin-right: 25px;
+  height: 3px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  background-color: white;
+}
+.divLineFooter{
+  height: 3px;
+  margin-left: 30%;
+  margin-right: 30%;
   background-color: white;
 }
 .divContent{
@@ -14080,8 +14107,32 @@ border-radius: 15px;
 .divImgContent:hover .overlay{
   opacity: 1;
 }
+.divText{
+  padding: 5%;
+  color: white;
+  font-family: 'FiraSans-SemiBold';
+
+}
+.divfooter{
+  background-color: var(--bs-primary);
+  font-family: 'FiraSans-SemiBold';
+  color: white;
 
 
+}
+.divfooter p {
+ margin-top:25px;
+ margin-left: 1%;
+}
+.divfooter ul {
+  margin-left: 50%;
+}
+.divfooter ul li{
+padding: 15px;
+font-size: 200%;
+
+
+}
 /* FIN DIVS */
 .text {
   color: white;
@@ -14134,6 +14185,7 @@ border-radius: 15px;
 .jbConocenos{
   font-family: 'FiraSans-Black';
   background-color: var(--bs-secondary);
+  text-align: center;
 }
 .jbWelcome p{
   font-family: 'FiraSans-SemiBold';
@@ -14158,10 +14210,29 @@ border-radius: 15px;
 
 @font-face {
   font-family: FiraSans-Black;
-  src: url(/fonts/Fira_Sans/FiraSans-Black.ttf);
+  src: url(./fonts/Fira_Sans/FiraSans-Black.ttf);
 }
 @font-face {
   font-family: FiraSans-SemiBold;
-  src: url(/fonts/Fira_Sans/FiraSans-SemiBold.ttf);
+  src: url(./fonts/Fira_Sans/FiraSans-SemiBold.ttf);
 }
 
+.flex-parent {
+ position:relative;
+ 
+  display: flex;
+}
+
+
+.flex-child-container {
+  display: flex;
+  position: relative;
+  background: #999;
+  
+}
+
+.flex-grandchild {
+
+  
+  padding: 20px;
+}
