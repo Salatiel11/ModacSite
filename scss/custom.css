@@ -13861,7 +13861,7 @@ fieldset:disabled .btn {
   width: 1em;
   height: 1em;
   background-color:var(--bs-yellow);
-
+  
 }
 .tdBordR{
   border-right: 3px solid var(--bs-primary);
@@ -14010,19 +14010,19 @@ margin-right: auto;
 }
 .imgv2spsBank {
   width: var(--imgvwidht-size);
-  height: 100px;
+  height: 72px;
   float: left;
-  display: flex;
+
   position: absolute;
 }
 .imgv3spsBank{
-  width: var(--imgvwidht-size);
+  width: 100px;
   height: 130px;
-  display: flex;
+
   position: absolute;
 }
 .imgh3spsBank {
-  width: 150px;
+  width: 100px;
   position: absolute;
   display: flex;
   height: var(--imghheight-size);
@@ -14072,13 +14072,27 @@ border-radius: 15px;
 .divUserContent{
   margin-left: auto;
   width: 100%;
-  padding: 50px;
+  font-family: 'FiraSans-SemiBold';
   text-align: center;
 display: flex;
+text-shadow: 0 0 3px black, 0 0 5px black;
+box-shadow: #000;
+box-shadow: 5px 5px 5px 5px #024d0a;
+padding-top: 10px;
+background-color: #ED8828;
+
+}
+.divTime{
+  
+   width: 100%;
+  
 }
 .divUser *{
  color: white;
  
+}
+.divImgUser{
+  width: 100%;
 }
 .divUserSolution{
   display: flex;
@@ -14096,24 +14110,25 @@ display: flex;
 }
 .divMsj {
   width: 100%;
-  height: 10%;
+  height: 100%;
   text-align: center;
  
 }
 .divMain{
   margin-top: 95px;
-  
+  height: 100vh;
 }
 .divMainGame {
   background-color: var(--bs-secondary);
   text-align: center;
   height: 100%;
+
   
   
 }
 .divBank{
   text-align: center;
-  width: 30%;
+  width: 100%;
  overflow: scroll;
  padding: 10px;
 }
@@ -14132,7 +14147,8 @@ grid-template-rows: repeat(6,1fr);
 border: solid thin black;
 }
 .divchooseLevel{
-  margin-top:4%;
+padding: 10px;
+
 }
 .divBoard2 *{
   border: solid thin black;
@@ -14140,18 +14156,17 @@ border: solid thin black;
 .divSolution{
   text-align: center;
   width: 100%;
-  padding: 10px;
- 
-
-  
+  padding: 10px;  
+}
+.divMainLevel{
+  padding: 20px;
   
 }
 .divAyuda{
   width: 20%;
 }
 .divImgBank{
-
-
+padding: 50px;
 }
 .divLineTitle{
   height: 3px;
@@ -14254,7 +14269,7 @@ margin-right: auto;
   font-family: 'FiraSans-Black';
   color: var(--bs-yellow);
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-  
+
   font-size: 25px;
 }
 .jbWelcome{
@@ -14333,7 +14348,7 @@ margin-right: auto;
 .flex-child-container {
   display: flex;
   position: relative;
-  background: #999;
+  
   
 }
 

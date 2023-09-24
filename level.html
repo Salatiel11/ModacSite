@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modac</title>
@@ -11,7 +10,8 @@
       href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./content/scripts/bootstrap.min.js"></script>
+    <script src="./content/scripts/functions.js"></script>
   </head>
   <body>
     <header id="header">
@@ -21,13 +21,14 @@
         });
       </script>
     </header>
-    <div class="divMainGame divMain">
+    <div class="divMainGame divMain divMainLevel";">
       <div class="divMsj">
-        <b class="bMsj">
-            ¿ POR QUÉ NO SER EN UN GENIO?</br>
-            CUANDO PUEDES LOGRARLO
-          
-        </b>
+        <div><b class="bMsj">
+          ¿ POR QUÉ NO SER EN UN GENIO?</br>
+          CUANDO PUEDES LOGRARLO
+        
+      </b></div>
+        <div>
         <table class="tableTitle">
             <tr>
               <td id="tdTitle" colspan="2" class="tdTitle">GRADO DE  DESARROLLO AB   RELACIONES ESPACIALES</td>
@@ -35,10 +36,11 @@
            
             
           </table>
+        </div>
           <div class="divLineTitle"></div>
       </div>
      
-      <div id="chooseLevel" class="divchooseLevel">
+      <div id="chooseLevel" class="divchooseLevel" >
         <script>
           $(function () {
             $("#chooseLevel").load("chooseLevel.html");
