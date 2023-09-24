@@ -1,29 +1,76 @@
-<h4 class="taReto">Reto 1-1</h4>
+<script>
+  var minutesLabel = document.getElementById("minutes");
+  var secondsLabel = document.getElementById("seconds");
+  var totalSeconds = 0;
+  setInterval(setTime, 1000);
 
-<table class="tableSolution">
-  <thead class="theadSolution">
-    <tr>
-      <th>Solucion</th>
-      <th>Movimientos</th>
-      <th>Puntos</th>
-    </tr>
-  </thead>
+  function setTime() {
+    ++totalSeconds;
+    secondsLabel.innerHTML = pad(totalSeconds % 60);
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  }
 
-  <tbody class="tbodySolution">
-    <tr>
-      <td>1-1</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1-2</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1-3</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+  function pad(val) {
+    var valString = val + "";
+    if (valString.length < 2) {
+      return "0" + valString;
+    } else {
+      return valString;
+    }
+  }
+</script>
+<div id="modal" style="padding: 10px">
+  <script>
+    $(function () {
+      $("#modal").load("modal.html");
+    });
+  </script>
+</div>
+<div class="divUserSolution">
+  <div class="divUser">
+    <div class="divUserContent">
+      <div>
+        <img class="imgUser" src="img/avatar.png" />
+        <p>Salatiel García Yáñez</p>
+      </div>
+
+      <div>
+        <label id="minutes">00</label>
+        <label id="colon">:</label>
+        <label id="seconds">00</label>
+      </div>
+    </div>
+  </div>
+  <div class="divTableSolution">
+    <table class="tableSolution">
+      <thead class="theadSolution">
+        <tr>
+          <th colspan="3">Reto 1-1</th>
+        </tr>
+        <tr>
+          <th>Sol</th>
+          <th>Mov</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+
+      <tbody class="tbodySolution">
+        <tr>
+          <td>1-1</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1-2</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1-3</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -13858,8 +13858,8 @@ fieldset:disabled .btn {
 
 /*TABLE GAME */
 .tdSquare {
-  width: var(--tdsquare-size);
-  height: var(--tdsquare-size);
+  width: 1em;
+  height: 1em;
   background-color:var(--bs-yellow);
 
 }
@@ -13891,7 +13891,34 @@ fieldset:disabled .btn {
   margin-right: auto;
   
 }
+.tableChooseLevels{
+  height: 50%;
+  width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+.tableChooseLevels> td{
+ height: 100%;
+ width: 100%;
+ border: #000 solid;
 
+ 
+}
+.tableChooseLevels button{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family:'FiraSans-Black'; 
+  border-radius: 10px;
+  color:var(--bs-primary);
+  text-shadow: 0 0 2px black, 0 0 1px #0000FF ;
+ }
+
+ .tableChooseLevels button:hover{
+  background-color: var(--bs-yellow);
+ }
+ 
 .tdTitle {
   font-family:'FiraSans-Black'; 
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF ;
@@ -13906,28 +13933,40 @@ fieldset:disabled .btn {
   
 }
 .taReto{
-  margin-top: 10px;
+
   font-family:'FiraSans-Black'; 
-  text-shadow: 0 0 3px white, 0 0 5px var(--bs-secondary);
+  text-shadow: 0 0 1px white, 0 0 2px var(--bs-secondary);
   font-size: 21px;
   color: black; 
+
 }
 .tableSolution{
   box-shadow: 5px 5px 5px 5px #024d0a;
+  border: 3px solid var(--bs-primary);
+ margin-right: auto;
+ margin-left: auto;
+
+
 }
 .tableSolution  td{
   border: 1px solid black;
   font-family:'FiraSans-SemiBold';
-  padding: 5px;
+  text-overflow: ellipsis;
   background-color:#84e391; 
+  width: 5%;
   color: black;
 }
 .theadSolution th {
   font-family:'FiraSans-SemiBold'; 
   background-color:var(--bs-primary); 
   color: white;
-  padding: 5px;
+  padding: 1px;
+  text-overflow: ellipsis;
+  font-size: 10px;
   border: 1px solid black;
+  text-overflow: ellipsis;
+
+  
 }
 .tableContent{
 margin-left: auto;
@@ -14006,6 +14045,10 @@ width: 250px;
 object-fit: cover;
 text-align: center;
 }
+.imgUser{
+  width:45px;
+  height: 45px;
+}
 .imgContent{
 width:100%;
 border-radius: 15px;
@@ -14014,21 +14057,48 @@ border-radius: 15px;
 /* FIN IMGS*/
 
 /*DIVS*/
+.divTableSolution{
+  width: 100%;
+  overflow: auto;
+  
+  padding: 10px;
 
-.divContainer{
+}
+.divUser{
+  width: 100%;
+ padding: 10px;
+
+}
+.divUserContent{
+  margin-left: auto;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+display: flex;
+}
+.divUser *{
+ color: white;
+ 
+}
+.divUserSolution{
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
+  align-items: center;
+  width: 100%;
+  
+}
+.divContainer{
+  display: grid;
+  
   margin-top: 25px;
   padding: 15px;
+  width: 100%;
   
 }
 .divMsj {
   width: 100%;
-  height: 60px;
-  padding: 15px;
-  overflow: hidden;
+  height: 10%;
   text-align: center;
+ 
 }
 .divMain{
   margin-top: 95px;
@@ -14036,7 +14106,8 @@ border-radius: 15px;
 .divMainGame {
   background-color: var(--bs-secondary);
   text-align: center;
-  height: 100vh;
+  height: 100%;
+  
   
 }
 .divBank{
@@ -14047,8 +14118,9 @@ border-radius: 15px;
 }
 .divBoard{
   text-align: center;
-  width: 60%;
-  
+  width: 100%;
+ padding: 2%;
+
 }
 .divBoard2{
   width: 50%;
@@ -14058,14 +14130,20 @@ grid-template-columns: repeat(6,1fr);
 grid-template-rows: repeat(6,1fr);
 border: solid thin black;
 }
+.divchooseLevel{
+  margin-top:4%;
+}
 .divBoard2 *{
   border: solid thin black;
 }
 .divSolution{
   text-align: center;
-  width: 60%;
+  width: 100%;
   padding: 10px;
-  width: 20%;
+ 
+
+  
+  
 }
 .divAyuda{
   width: 20%;
@@ -14130,7 +14208,11 @@ border: solid thin black;
 .divfooter ul li{
 padding: 15px;
 font-size: 200%;
-
+}
+.divVideo{
+margin-left: auto;
+margin-right: auto;
+ width: 50%;
 
 }
 /* FIN DIVS */
@@ -14171,7 +14253,7 @@ font-size: 200%;
   font-family: 'FiraSans-Black';
   color: var(--bs-yellow);
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-
+  
   font-size: 25px;
 }
 .jbWelcome{
@@ -14207,14 +14289,37 @@ font-size: 200%;
 .iframe{
   border: none;
 }
+.btn-modal{
+  border-radius: 12px;
+  font-family: 'FiraSans-SemiBold';
+  font-size: 80%;
+  width: 30%;
+  margin: 2px;
 
+}
+.btn-modal-info{
+  background-color: gray;
+  color: white;
+}
+.btn-modal-info:hover{
+  background-color: var(--bs-gray);
+  color: white;
+}
+.btn-modal-inst{
+  background-color: #23DF45;
+  color: white;
+}
+.btn-modal-inst:hover{
+  background-color: #298239;
+  color: white;
+}
 @font-face {
   font-family: FiraSans-Black;
-  src: url(./fonts/Fira_Sans/FiraSans-Black.ttf);
+  src: url(/fonts/Fira_Sans/FiraSans-Black.ttf);
 }
 @font-face {
   font-family: FiraSans-SemiBold;
-  src: url(./fonts/Fira_Sans/FiraSans-SemiBold.ttf);
+  src: url(/fonts/Fira_Sans/FiraSans-SemiBold.ttf);
 }
 
 .flex-parent {
