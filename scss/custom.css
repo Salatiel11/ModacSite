@@ -14102,6 +14102,7 @@ display: flex;
 }
 .divMain{
   margin-top: 95px;
+  
 }
 .divMainGame {
   background-color: var(--bs-secondary);
@@ -14315,11 +14316,11 @@ margin-right: auto;
 }
 @font-face {
   font-family: FiraSans-Black;
-  src: url(/fonts/Fira_Sans/FiraSans-Black.ttf);
+  src: url(./fonts/Fira_Sans/FiraSans-Black.ttf);
 }
 @font-face {
   font-family: FiraSans-SemiBold;
-  src: url(/fonts/Fira_Sans/FiraSans-SemiBold.ttf);
+  src: url(./fonts/Fira_Sans/FiraSans-SemiBold.ttf);
 }
 
 .flex-parent {
